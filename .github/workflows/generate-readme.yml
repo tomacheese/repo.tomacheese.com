@@ -1,0 +1,22 @@
+name: Generate readme
+
+on:
+  push:
+    branches:
+     - master
+
+jobs:
+  generate:
+   runs-on: ubuntu-latest
+
+   steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Generate README file
+      working-directory: ./.github/generate-readme/
+      run: yarn build --target ../../ --output ../../README.md
+
+    - name: Commit & Push
+      run: |
+        git status | grep modified && git add data.json && git commit -v -m "feat: Updated README.md [skip ci]" && git push
