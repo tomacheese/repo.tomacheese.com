@@ -39,12 +39,14 @@ jobs:
       working-directory: ./.github/generate-readme/
       run: yarn
 
-    - name: Generate README file
-      working-directory: ./.github/generate-readme/
-      run: yarn build --target ../../ --output ../../README.md
+    - name: Generate README failed
+      run: |
+        cd .github/generate-readme/
+        yarn build --target ../../ --output ../../README.md
 
     - name: Commit & Push
       run: |
+        ls -la
         git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
