@@ -42,4 +42,4 @@ jobs:
 
     - name: Commit & Push
       run: |
-        git status | grep modified && git add data.json && git commit -v -m "feat: Updated README.md [skip ci]" && git push
+        git status | grep modified && git add README.md && git commit -v -m "feat: Updated README.md [skip ci]" && git push
