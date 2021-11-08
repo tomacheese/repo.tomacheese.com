@@ -12,6 +12,9 @@ jobs:
    steps:
     - name: Checkout repo
       uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
 
     - name: Setup node env
       uses: actions/setup-node@v2.4.1
@@ -42,4 +45,11 @@ jobs:
 
     - name: Commit & Push
       run: |
-        git status | grep modified && git add README.md && git commit -v -m "feat: Updated README.md [skip ci]" && git push
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git status | grep modified && git add README.md && git commit -v -m "feat: Updated README.md [skip ci]" || true
+
+    - name: Push
+      uses: ad-m/github-push-action@master
+      with:
+        github_token:  ${{ secrets.GITHUB_TOKEN }}
