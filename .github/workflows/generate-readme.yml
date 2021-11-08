@@ -47,6 +47,7 @@ jobs:
         git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git status
         git status | grep modified
         git status | grep modified && git add -A && git commit -v -m "feat: Updated README.md [skip ci]" || true
         git push origin HEAD:${GITHUB_REF};
