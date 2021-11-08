@@ -1,0 +1,23 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 04 14:33:57 JST 2021
+https\://papermc.io/repo/repository/maven-public/.lastUpdated=1620106431288
+https\://jcenter.bintray.com/.error=
+https\://oss.sonatype.org/content/repositories/snapshots/.error=
+https\://maven.pkg.github.com/jaoafa/jao-Super-Achievement2/.error=Could not transfer artifact com.vexsoftware\:nuvotifier-universal\:pom\:2.6.0 from/to github (https\://maven.pkg.github.com/jaoafa/jao-Super-Achievement2)\: Authentication failed for https\://maven.pkg.github.com/jaoafa/jao-Super-Achievement2/com/vexsoftware/nuvotifier-universal/2.6.0/nuvotifier-universal-2.6.0.pom 401 Unauthorized
+https\://repo.mikeprimm.com/.lastUpdated=1620106434400
+@default-github-https\://maven.pkg.github.com/jaoafa/jao-Super-Achievement2/.lastUpdated=1620106434979
+https\://repo.viaversion.com/.lastUpdated=1620106436865
+https\://papermc.io/repo/repository/maven-public/.error=
+https\://jcenter.bintray.com/.lastUpdated=1617186153372
+https\://oss.sonatype.org/content/groups/public/.error=
+https\://oss.sonatype.org/content/repositories/snapshots/.lastUpdated=1620106432973
+https\://m2.dv8tion.net/releases/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1620106437927
+https\://repo.mikeprimm.com/.error=
+https\://maven.enginehub.org/repo/.error=
+https\://repo.maven.apache.org/maven2/.error=
+https\://m2.dv8tion.net/releases/.lastUpdated=1620106433847
+https\://oss.sonatype.org/content/groups/public/.lastUpdated=1620106432800
+https\://dl.bintray.com/ichbinjoe/public/.lastUpdated=1617186154717
+https\://repo.viaversion.com/.error=
+https\://maven.enginehub.org/repo/.lastUpdated=1620106437274
