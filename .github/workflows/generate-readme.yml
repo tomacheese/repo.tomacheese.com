@@ -12,6 +12,9 @@ jobs:
    steps:
     - name: Checkout repo
       uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
 
     - name: Setup node env
       uses: actions/setup-node@v2.4.1
@@ -36,19 +39,15 @@ jobs:
       working-directory: ./.github/generate-readme/
       run: yarn
 
-    - name: Generate README
-      run: |
-        cd .github/generate-readme/
-        yarn build --target ../../ --output ../../README.md
+    - name: Generate README file
+      working-directory: ./.github/generate-readme/
+      run: yarn build --target ../../ --output ../../README.md
 
     - name: Commit & Push
       run: |
-        ls -la
         git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-        git status
-        git status | grep modified
         git status | grep modified && git add -A && git commit -v -m "feat: Updated README.md [skip ci]" || true
         git push origin HEAD:${GITHUB_REF};
       env:
