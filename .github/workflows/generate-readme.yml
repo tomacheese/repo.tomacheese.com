@@ -50,3 +50,5 @@ jobs:
         git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         git status | grep modified && git add -A && git commit -v -m "feat: Updated README.md [skip ci]" || true
         git push origin HEAD:${GITHUB_REF};
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
