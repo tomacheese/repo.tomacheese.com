@@ -1,0 +1,57 @@
+name: Create Repo - Maven project
+
+on:
+  workflow_dispatch:
+    inputs:
+      github-repo:
+        description: 'GitHub repository name (e.g, jaoafa/MyMaid4)'
+        required: true
+      jdk-version:
+        description: 'JDK version'
+        required: true
+        default: '16'
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout ${{ github.event.inputs.github-repo }}
+        uses: actions/checkout@v2
+        with:
+          path: project
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Checkout tomacheese/repo.tomacheese.com
+        uses: actions/checkout@v2
+        with:
+          path: repositorys
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: ${{ github.event.inputs.jdk-version }}
+
+      - name: Maven deploy
+        working-directory: ./project/
+        run: |
+          mvn deploy -DaltDeploymentRepository=internal.repo::default::file:///${{ github.workspace }}/repositorys/
+
+      - name: Is modified
+        id: is-modified
+        run: |
+          git status | grep modified
+          echo "::set-output name=modified::`echo $?`"
+
+      - name: Create pull request
+        if: ${{ steps.is-modified.outputs.modified == '0' }}
+        run: |
+          hub add -A
+          hub commit -m "feat: ${{ github.event.inputs.github-repo }}"
+          hub push --set-upstream origin add-repo-${{ github.event.inputs.github-repo }}
+          hub pull-request -b master -m "feat: Add repo ${{ github.event.inputs.github-repo }}" -r book000
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
