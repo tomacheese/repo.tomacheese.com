@@ -48,12 +48,14 @@ jobs:
 
       - name: Is modified
         id: is-modified
+        working-directory: ./repositorys/
         run: |
           git status | grep modified
           echo "::set-output name=modified::`echo $?`"
 
       - name: Create pull request
         if: ${{ steps.is-modified.outputs.modified == '0' }}
+        working-directory: ./repositorys/
         run: |
           hub add -A
           hub commit -m "feat: ${{ github.event.inputs.github-repo }}"
