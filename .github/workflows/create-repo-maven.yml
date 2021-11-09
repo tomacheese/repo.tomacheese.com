@@ -19,6 +19,7 @@ jobs:
       - name: Checkout ${{ github.event.inputs.github-repo }}
         uses: actions/checkout@v2
         with:
+          repository: ${{ github.event.inputs.github-repo }}
           path: project
           persist-credentials: false
           fetch-depth: 0
