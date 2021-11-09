@@ -53,7 +53,7 @@ jobs:
         run: |
           pwd
           git status
-          git status | grep modified && hub add -A && \
+          git status | grep -e modified -e "Untracked files" && hub add -A && \
             hub commit -m "feat: ${{ github.event.inputs.github-repo }}" && \
             hub push --set-upstream origin add-repo-${{ github.event.inputs.github-repo }} && \
             hub pull-request -b master -m "feat: Add repo ${{ github.event.inputs.github-repo }}" -r book000 || true
