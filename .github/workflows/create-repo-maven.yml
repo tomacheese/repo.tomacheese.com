@@ -39,27 +39,24 @@ jobs:
       - name: Maven deploy
         working-directory: ./project/
         run: |
+          pwd
           ls -la
           mvn deploy -DaltDeploymentRepository=internal.repo::default::file:///${{ github.workspace }}/repositorys/
 
       - name: List repositorys directory
         working-directory: ./repositorys/
-        run: ls -la
-
-      - name: Is modified
-        id: is-modified
-        working-directory: ./repositorys/
         run: |
-          git status | grep modified
-          echo "::set-output name=modified::`echo $?`"
+          sudo yum install -y tree
+          tree .
 
       - name: Create pull request
-        if: ${{ steps.is-modified.outputs.modified == '0' }}
         working-directory: ./repositorys/
         run: |
-          hub add -A
-          hub commit -m "feat: ${{ github.event.inputs.github-repo }}"
-          hub push --set-upstream origin add-repo-${{ github.event.inputs.github-repo }}
-          hub pull-request -b master -m "feat: Add repo ${{ github.event.inputs.github-repo }}" -r book000
+          pwd
+          git status
+          git status | grep modified && hub add -A && \
+            hub commit -m "feat: ${{ github.event.inputs.github-repo }}" && \
+            hub push --set-upstream origin add-repo-${{ github.event.inputs.github-repo }} && \
+            hub pull-request -b master -m "feat: Add repo ${{ github.event.inputs.github-repo }}" -r book000 || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
