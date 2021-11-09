@@ -53,6 +53,14 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      - name: 'github-repo string "/" replace to "-"'
+        run: |
+          ref="${github.event.inputs.github-repo////-}"
+          echo $ref
+          echo "::set-env name=ref::$ref"
+        env:
+          github_ref: ${{ github.ref }}
+
       - name: Create pull request
         working-directory: ./repositorys/
         run: |
