@@ -43,11 +43,10 @@ jobs:
           ls -la
           mvn deploy -DaltDeploymentRepository=internal.repo::default::file:///${{ github.workspace }}/repositorys/
 
-      - name: List repositorys directory
-        working-directory: ./repositorys/
+      - name: List directory
         run: |
-          sudo yum install -y tree
-          tree .
+          sudo apt install -y tree
+          tree -L 5 .
 
       - name: Create pull request
         working-directory: ./repositorys/
