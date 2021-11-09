@@ -65,6 +65,6 @@ jobs:
           git status | grep -e modified -e "Untracked files" && hub add -A && \
             hub commit -m "feat: ${{ github.event.inputs.github-repo }}" && \
             hub push --set-upstream origin HEAD:add-repo-${{ steps.github-repo.outputs.value }} && \
-            hub pull-request -b master -m "feat: Add repo ${{ github.event.inputs.github-repo }}" -r book000 || true
+            hub pull-request -h add-repo-${{ steps.github-repo.outputs.value }} -b master -m "feat: Add repo ${{ github.event.inputs.github-repo }}" -r book000 || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
