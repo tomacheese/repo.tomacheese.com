@@ -12,7 +12,7 @@ on:
         default: '16'
 
 jobs:
-  create:
+  add-repo:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,15 +21,11 @@ jobs:
         with:
           repository: ${{ github.event.inputs.github-repo }}
           path: project
-          persist-credentials: false
-          fetch-depth: 0
 
       - name: Checkout tomacheese/repo.tomacheese.com
         uses: actions/checkout@v2
         with:
           path: repositorys
-          persist-credentials: false
-          fetch-depth: 0
 
       - name: Set up JDK ${{ github.event.inputs.jdk-version }}
         uses: actions/setup-java@v1
