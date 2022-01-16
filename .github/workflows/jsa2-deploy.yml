@@ -8,7 +8,7 @@ on:
         required: true
 
 jobs:
-  add-repo:
+  update-jsa2-repo:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,12 +23,23 @@ jobs:
         with:
           path: repositorys
 
-      - name: Extract deploy-repo.zip
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: ${{ github.event.inputs.jdk-version }}
+          distribution: adopt
+
+      - name: Maven deploy
+        working-directory: ./project/
         run: |
-          cd repositorys
-          wget https://github.com/jaoafa/jaoSuperAchievement2/releases/latest/download/deploy-repo.zip
-          unzip deploy-repo.zip
-          rm deploy-repo.tar.gz
+          pwd
+          ls -la
+          mvn deploy -DaltDeploymentRepository=internal.repo::default::file:///${{ github.workspace }}/repositorys/ -Drevision=${{ github.event.inputs.version }}
+
+      - name: List directory
+        run: |
+          sudo apt install -y tree
+          tree -L 5 .
 
       - name: Set git config
         run: |
@@ -41,8 +52,8 @@ jobs:
           pwd
           git status
           git status | grep -e modified -e "Untracked files" && hub add -A && \
-            hub commit -m "feat: ${{ github.event.inputs.github-repo }}" && \
-            hub push --set-upstream origin HEAD:add-repo-jsa2-${{ github.event.inputs.version }} && \
-            hub pull-request -h add-repo-jsa2-${{ github.event.inputs.version }} -b master -m "feat: Update repo jSA2 ${{ github.event.inputs.version }}" -r book000 -f || true
+            hub commit -m "feat: Update repo jao Super Achievement2 v${{ github.event.inputs.version }}" && \
+            hub push --set-upstream origin HEAD:update-repo-jsa2-${{ github.event.inputs.version }} && \
+            hub pull-request -h update-repo-jsa2-${{ github.event.inputs.version }}} -b master -m "feat: Update repo jao Super Achievement2 v${{ github.event.inputs.version }}" -r book000 -f || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
