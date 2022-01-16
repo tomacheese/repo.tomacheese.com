@@ -1,4 +1,4 @@
-name: Updated repo - jao Super Achievements2
+name: Update repo - jao Super Achievements2
 
 on:
   workflow_dispatch:
@@ -54,6 +54,6 @@ jobs:
           git status | grep -e modified -e "Untracked files" && hub add -A && \
             hub commit -m "feat: Update repo jao Super Achievement2 v${{ github.event.inputs.version }}" && \
             hub push --set-upstream origin HEAD:update-repo-jsa2-${{ github.event.inputs.version }} && \
-            hub pull-request -h update-repo-jsa2-${{ github.event.inputs.version }}} -b master -m "feat: Update repo jao Super Achievement2 v${{ github.event.inputs.version }}" -r book000 -f || true
+            hub pull-request -p -h update-repo-jsa2-${{ github.event.inputs.version }}} -b master -m "feat: Update repo jao Super Achievement2 v${{ github.event.inputs.version }}" -r book000 -f || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
