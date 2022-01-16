@@ -1,0 +1,48 @@
+name: Updated repo - jao Super Achievements2
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'jSA2 version'
+        required: true
+
+jobs:
+  add-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: jaoafa/jaoSuperAchievement2
+          path: project
+
+      - name: Checkout tomacheese/repo.tomacheese.com
+        uses: actions/checkout@v2
+        with:
+          path: repositorys
+
+      - name: Extract deploy-repo.zip
+        run: |
+          cd repositorys
+          wget https://github.com/jaoafa/jaoSuperAchievement2/releases/latest/download/deploy-repo.zip
+          unzip deploy-repo.zip
+          rm deploy-repo.tar.gz
+
+      - name: Set git config
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Create pull request
+        working-directory: ./repositorys/
+        run: |
+          pwd
+          git status
+          git status | grep -e modified -e "Untracked files" && hub add -A && \
+            hub commit -m "feat: ${{ github.event.inputs.github-repo }}" && \
+            hub push --set-upstream origin HEAD:add-repo-jsa2-${{ github.event.inputs.version }} && \
+            hub pull-request -h add-repo-jsa2-${{ github.event.inputs.version }} -b master -m "feat: Update repo jSA2 ${{ github.event.inputs.version }}" -r book000 -f || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
