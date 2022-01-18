@@ -30,6 +30,7 @@ jobs:
           distribution: adopt
 
       - name: Sed Version
+        working-directory: ./project/
         run: |
           sed -r -i "1,/version/s#<version>(.+?)</version>#<version>${{ github.event.inputs.version }}</version>#" pom.xml
           git diff
