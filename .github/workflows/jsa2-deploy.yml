@@ -29,12 +29,17 @@ jobs:
           java-version: 17
           distribution: adopt
 
+      - name: Sed Version
+        run: |
+          sed -r -i "1,/version/s#<version>(.+?)</version>#<version>${{ github.event.inputs.version }}</version>#" pom.xml
+          git diff
+
       - name: Maven deploy
         working-directory: ./project/
         run: |
           pwd
           ls -la
-          mvn deploy -DaltDeploymentRepository=internal.repo::default::file:///${{ github.workspace }}/repositorys/ -Drevision=${{ github.event.inputs.version }}
+          mvn deploy -DaltDeploymentRepository=internal.repo::default::file:///${{ github.workspace }}/repositorys/
 
       - name: List directory
         run: |
@@ -52,8 +57,8 @@ jobs:
           pwd
           git status
           git status | grep -e modified -e "Untracked files" && hub add -A && \
-            hub commit -m "feat: Update repo jao Super Achievement2 v${{ github.event.inputs.version }}" && \
+            hub commit -m "feat: Update repo jao Super Achievement2 ${{ github.event.inputs.version }}" && \
             hub push --set-upstream origin HEAD:update-repo-jsa2-${{ github.event.inputs.version }} && \
-            hub pull-request -p -h update-repo-jsa2-${{ github.event.inputs.version }}} -b master -m "feat: Update repo jao Super Achievement2 v${{ github.event.inputs.version }}" -r book000 -f || true
+            hub pull-request -p -h update-repo-jsa2-${{ github.event.inputs.version }}} -b master -m "feat: Update repo jao Super Achievement2 ${{ github.event.inputs.version }}" -r book000 -f || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
