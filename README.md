@@ -114,3 +114,17 @@ Tomacheese Maven Repository
 #### Versions
 
 - `3.1.0`
+
+### com.jaoafa/jaosuperachievement2
+
+```xml
+<dependency>
+    <groupId>com.jaoafa</groupId>
+    <artifactId>jaosuperachievement2</artifactId>
+    <version>2.2.2</version>
+</dependency>
+```
+
+#### Versions
+
+- `2.2.2`
