@@ -1,4 +1,4 @@
-import parser from 'fast-xml-parser'
+import { XMLParser } from 'fast-xml-parser'
 import fs from 'fs'
 import * as yargs from 'yargs'
 
@@ -37,6 +37,7 @@ class MavenMetadata {
 
 function parseMavenMetadata(path: string): MavenMetadata {
   const content = fs.readFileSync(path, 'utf8')
+  const parser = new XMLParser()
   const metadata = parser.parse(content)
   console.log(metadata)
   return new MavenMetadata(
