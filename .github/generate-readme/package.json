@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@types/yargs": "17.0.9",
-    "fast-xml-parser": "4.0.4",
+    "fast-xml-parser": "4.0.5",
     "yargs": "17.3.1"
   }
 }
