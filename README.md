@@ -121,7 +121,7 @@ Tomacheese Maven Repository
 <dependency>
     <groupId>com.jaoafa</groupId>
     <artifactId>jaosuperachievement2</artifactId>
-    <version>2.5.26</version>
+    <version>2.5.27</version>
 </dependency>
 ```
 
@@ -156,3 +156,4 @@ Tomacheese Maven Repository
 - `2.5.24`
 - `2.5.25`
 - `2.5.26`
+- `2.5.27`
