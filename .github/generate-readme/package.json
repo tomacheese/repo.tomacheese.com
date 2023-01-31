@@ -28,7 +28,7 @@
     "ts-node-dev": "2.0.0",
     "typescript": "4.9.5",
     "yarn-run-all": "3.1.1",
-    "@types/yargs": "17.0.20",
+    "@types/yargs": "17.0.21",
     "fast-xml-parser": "4.0.15",
     "yargs": "17.6.2"
   }
