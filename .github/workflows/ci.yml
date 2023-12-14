@@ -105,7 +105,7 @@ jobs:
 
       - name: 📦 Upload artifact
         if: steps.check-dist.outputs.exists == 'true'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ./.github/generate-readme/dist
           path: dist
