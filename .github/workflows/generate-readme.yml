@@ -1,6 +1,7 @@
 name: Generate readme
 
 on:
+  workflow_dispatch:
   push:
     branches:
      - master
@@ -11,43 +12,51 @@ jobs:
 
    steps:
     - name: Checkout repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
       with:
         persist-credentials: false
         fetch-depth: 0
 
-    - name: Setup node env
-      uses: actions/setup-node@v4.0.2
+    - name: Setup node
+      uses: actions/setup-node@v4
       with:
-        node-version: 16
+        node-version-file: ./.github/generate-readme/.node-version
 
-    - name: Get yarn cache directory path
-      id: yarn-cache-dir-path
-      working-directory: ./.github/generate-readme/
-      run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
-
-    - name: Cache node_modules
-      uses: actions/cache@v4.0.0
-      id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v2
+      id: pnpm-install
       with:
-        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        run_install: false
+        package_json_file: ./.github/generate-readme/package.json
+
+    - name: Get pnpm store directory
+      id: pnpm-cache
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+    - name: Setup pnpm cache
+      uses: actions/cache@v4
+      with:
+        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
         restore-keys: |
-          ${{ runner.os }}-yarn-
+          ${{ runner.os }}-pnpm-store-
 
     - name: Install dependencies
       working-directory: ./.github/generate-readme/
-      run: yarn
+      run: |
+        pnpm install --frozen-lockfile --prefer-frozen-lockfile
 
     - name: Generate README file
       working-directory: ./.github/generate-readme/
-      run: yarn build --target ../../ --output ../../README.md
+      run: pnpm start --target-emojis ../../../icons/ --target-stickers ../../../stickers/ --output ../../../README.md --target-guilds ../../../targetGuilds.json --emojis ../../../emojis.json --stickers ../../../stickers.json
 
     - name: Commit & Push
       run: |
         git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
-        git config --global user.name "${GITHUB_ACTOR}"
-        git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git config --global user.name "GitHub Action"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git status | grep modified && git add -A && git commit -v -m "feat: Updated README.md [skip ci]" || true
         git push origin HEAD:${GITHUB_REF};
       env:

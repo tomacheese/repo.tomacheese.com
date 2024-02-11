@@ -1,22 +1,22 @@
 import { XMLParser } from 'fast-xml-parser'
-import fs from 'fs'
+import fs from 'node:fs'
 import * as yargs from 'yargs'
 
 function getMavenMetadataFiles(dirpath: string) {
   const files: string[] = []
 
-  fs.readdirSync(dirpath).forEach((file) => {
+  for (const file of fs.readdirSync(dirpath)) {
     const filepath = `${dirpath}/${file}`
     const stat = fs.statSync(filepath)
     if (stat.isDirectory()) {
       files.push(...getMavenMetadataFiles(filepath))
     } else {
       if (!file.endsWith('maven-metadata.xml')) {
-        return
+        continue
       }
       files.push(filepath)
     }
-  })
+  }
 
   return files
 }
@@ -43,11 +43,11 @@ function parseMavenMetadata(path: string): MavenMetadata {
   return new MavenMetadata(
     metadata.metadata.groupId,
     metadata.metadata.artifactId,
-    metadata.metadata.versioning.latest !== undefined
-      ? metadata.metadata.versioning.latest
-      : metadata.metadata.versioning.release !== undefined
-      ? metadata.metadata.versioning.release
-      : null,
+    metadata.metadata.versioning.latest === undefined
+      ? metadata.metadata.versioning.release === undefined
+        ? null
+        : metadata.metadata.versioning.release
+      : metadata.metadata.versioning.latest,
     metadata.metadata.versioning.versions.version
   )
 }
