@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        directory: [./.github/scripts/generate-readme]
+        directory: [./.github/generate-readme]
       fail-fast: false
 
     steps:

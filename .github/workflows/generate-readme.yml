@@ -20,14 +20,14 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v4
       with:
-        node-version-file: ./.github/scripts/generate-readme/.node-version
+        node-version-file: ./.github/generate-readme/.node-version
 
     - name: Setup pnpm
       uses: pnpm/action-setup@v2
       id: pnpm-install
       with:
         run_install: false
-        package_json_file: ./.github/scripts/generate-readme/package.json
+        package_json_file: ./.github/generate-readme/package.json
 
     - name: Get pnpm store directory
       id: pnpm-cache
@@ -44,12 +44,12 @@ jobs:
           ${{ runner.os }}-pnpm-store-
 
     - name: Install dependencies
-      working-directory: ./.github/scripts/generate-readme/
+      working-directory: ./.github/generate-readme/
       run: |
         pnpm install --frozen-lockfile --prefer-frozen-lockfile
 
     - name: Generate README file
-      working-directory: ./.github/scripts/generate-readme/
+      working-directory: ./.github/generate-readme/
       run: pnpm start --target-emojis ../../../icons/ --target-stickers ../../../stickers/ --output ../../../README.md --target-guilds ../../../targetGuilds.json --emojis ../../../emojis.json --stickers ../../../stickers.json
 
     - name: Commit & Push
