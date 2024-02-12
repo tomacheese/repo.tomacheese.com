@@ -50,7 +50,7 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: 'github-repo string "/" replace to "-"'
-        uses: mad9000/actions-find-and-replace-string@4
+        uses: mad9000/actions-find-and-replace-string@5
         id: github-repo
         with:
           source: ${{ github.event.inputs.github-repo }}
