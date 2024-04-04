@@ -15,7 +15,7 @@
     "fix": "run-z fix:prettier,fix:eslint"
   },
   "devDependencies": {
-    "@types/node": "20.12.3",
+    "@types/node": "20.12.4",
     "@types/yargs": "17.0.32",
     "@typescript-eslint/eslint-plugin": "7.5.0",
     "@typescript-eslint/parser": "7.5.0",
