@@ -38,16 +38,31 @@ class MavenMetadata {
 function parseMavenMetadata(path: string): MavenMetadata {
   const content = fs.readFileSync(path, 'utf8')
   const parser = new XMLParser()
-  const metadata = parser.parse(content)
+  const metadata: {
+    metadata: {
+      groupId: string
+      artifactId: string
+      versioning: {
+        latest?: string
+        release?: string
+        versions: {
+          version: string[]
+        }
+      }
+    }
+  } = parser.parse(content)
   console.log(metadata)
+  const latestVersion =
+    metadata.metadata.versioning.latest ??
+    metadata.metadata.versioning.release ??
+    null
+  if (latestVersion === null) {
+    throw new Error('latest version not found')
+  }
   return new MavenMetadata(
     metadata.metadata.groupId,
     metadata.metadata.artifactId,
-    metadata.metadata.versioning.latest === undefined
-      ? metadata.metadata.versioning.release === undefined
-        ? null
-        : metadata.metadata.versioning.release
-      : metadata.metadata.versioning.latest,
+    latestVersion,
     metadata.metadata.versioning.versions.version
   )
 }
@@ -94,7 +109,20 @@ ${versions}
   return contents.join('\n\n')
 }
 
-function main(argv: any) {
+function main() {
+  const argv = yargs
+    .option('target', {
+      description: 'Target path',
+      type: 'string',
+      demandOption: true,
+    })
+    .option('output', {
+      description: 'Output path',
+      type: 'string',
+      demandOption: true,
+    })
+    .help()
+    .parseSync()
   const mavenMetadataFiles = getMavenMetadataFiles(argv.target)
   const metadatas = []
   for (const mavenMetadataFile of mavenMetadataFiles) {
@@ -106,15 +134,4 @@ function main(argv: any) {
   fs.writeFileSync(argv.output, template.replace('{{REPOSITORYS}}', readme))
 }
 
-main(
-  yargs
-    .option('target', {
-      description: 'Target path',
-      demandOption: true,
-    })
-    .option('output', {
-      description: 'Output path',
-      demandOption: true,
-    })
-    .help().argv
-)
+main()
