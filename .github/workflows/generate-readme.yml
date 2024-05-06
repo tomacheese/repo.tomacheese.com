@@ -50,7 +50,7 @@ jobs:
 
     - name: Generate README file
       working-directory: ./.github/generate-readme/
-      run: pnpm start --target-emojis ../../../icons/ --target-stickers ../../../stickers/ --output ../../../README.md --target-guilds ../../../targetGuilds.json --emojis ../../../emojis.json --stickers ../../../stickers.json
+      run: pnpm start --target ../../ --output ../../README.md
 
     - name: Commit & Push
       run: |
