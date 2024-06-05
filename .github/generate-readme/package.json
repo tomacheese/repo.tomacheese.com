@@ -15,7 +15,7 @@
     "fix": "run-z fix:prettier,fix:eslint"
   },
   "devDependencies": {
-    "@book000/eslint-config": "1.6.29",
+    "@book000/eslint-config": "1.6.30",
     "@types/node": "20.14.2",
     "@types/yargs": "17.0.32",
     "eslint": "9.4.0",
