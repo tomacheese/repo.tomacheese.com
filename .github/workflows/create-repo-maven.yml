@@ -17,13 +17,13 @@ jobs:
 
     steps:
       - name: Checkout ${{ github.event.inputs.github-repo }}
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: ${{ github.event.inputs.github-repo }}
           path: project
 
       - name: Checkout tomacheese/repo.tomacheese.com
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           path: repositorys
 
