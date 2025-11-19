@@ -1,0 +1,172 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-common/new-voice-encryption-modes-0170-SNAPSHOT/kord-common-new-voice-encryption-modes-0170-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-common",
+    "version": "new-voice-encryption-modes-0170-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-okhttp",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-jvm.jar",
+          "url": "kord-common-jvm-new-voice-encryption-modes-0170-SNAPSHOT.jar",
+          "size": 2096183,
+          "sha512": "b15f7964c9da3025a726e8364b3cb8885811753845eab9f08ffdce873bed7acd373d94a05728e2a417e22f082c71989790f7efb85c42922a10753a1cd7ac1a6d",
+          "sha256": "ba4b245fc17fa787b9f57c05b0d6aede042e79085e706b736d3050ee180fb9ff",
+          "sha1": "67d4e7398b7b0339b9664e662c7566c7e67a8f05",
+          "md5": "d3b37f74b3a69a0064418e4f20671a3f"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-okhttp",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-jvm.jar",
+          "url": "kord-common-jvm-new-voice-encryption-modes-0170-SNAPSHOT.jar",
+          "size": 2096183,
+          "sha512": "b15f7964c9da3025a726e8364b3cb8885811753845eab9f08ffdce873bed7acd373d94a05728e2a417e22f082c71989790f7efb85c42922a10753a1cd7ac1a6d",
+          "sha256": "ba4b245fc17fa787b9f57c05b0d6aede042e79085e706b736d3050ee180fb9ff",
+          "sha1": "67d4e7398b7b0339b9664e662c7566c7e67a8f05",
+          "md5": "d3b37f74b3a69a0064418e4f20671a3f"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "common-jvm-sources.jar",
+          "url": "kord-common-jvm-new-voice-encryption-modes-0170-SNAPSHOT-sources.jar",
+          "size": 192144,
+          "sha512": "937ad4c76c95f68ff835dfb5349429276d79e13667a09449df707653987631ec63f6a8aa32b53c73977b87f0f12704c7539ffe439c173230d128c19e02523dd3",
+          "sha256": "46de77d588079f9baf22e65d67614f1a310a380f31c49694ab8e6fc81ee54c75",
+          "sha1": "b7d3155aa1c7e1bb1eaaabd07d82efeb8cf33bf7",
+          "md5": "ba8c164e501141e45c73abf46c902d0c"
+        }
+      ]
+    }
+  ]
+}

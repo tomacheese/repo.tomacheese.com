@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>dev.kord</groupId>
+  <artifactId>kord-ksp-annotations</artifactId>
+  <versioning>
+    <latest>new-voice-encryption-modes-0170-SNAPSHOT</latest>
+    <versions>
+      <version>new-voice-encryption-modes-0170-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20251119215647</lastUpdated>
+  </versioning>
+</metadata>

@@ -3,10 +3,10 @@
   <groupId>dev.kord</groupId>
   <artifactId>kord-core-voice</artifactId>
   <versioning>
-    <latest>new-voice-encryption-modes-SNAPSHOT</latest>
+    <latest>new-voice-encryption-modes-0170-SNAPSHOT</latest>
     <versions>
-      <version>new-voice-encryption-modes-SNAPSHOT</version>
+      <version>new-voice-encryption-modes-0170-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20251119201749</lastUpdated>
+    <lastUpdated>20251119215827</lastUpdated>
   </versioning>
 </metadata>

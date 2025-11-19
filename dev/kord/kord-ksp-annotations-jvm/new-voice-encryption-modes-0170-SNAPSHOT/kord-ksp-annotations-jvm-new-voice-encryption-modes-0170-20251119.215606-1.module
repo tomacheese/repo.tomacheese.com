@@ -1,0 +1,102 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-ksp-annotations/new-voice-encryption-modes-0170-SNAPSHOT/kord-ksp-annotations-new-voice-encryption-modes-0170-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-ksp-annotations",
+    "version": "new-voice-encryption-modes-0170-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksp-annotations-jvm.jar",
+          "url": "kord-ksp-annotations-jvm-new-voice-encryption-modes-0170-SNAPSHOT.jar",
+          "size": 4350,
+          "sha512": "665ba1e7650c7805db573e391f47c47709af33bfab8eaca6c53d2cf2ab5e55c23370a1195d4405f997d954d6417b59e74dbb2b5307b91ce3d40bd56e3d9304bf",
+          "sha256": "8f63732b6fee6d7b1bcd5c6beabf878ae412804a38bbe3bda109ef879d8fbd14",
+          "sha1": "be3e922aa36784ed2defe20024a2613489b58eb1",
+          "md5": "408d74eb5c52059dbb33878b2444e816"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksp-annotations-jvm.jar",
+          "url": "kord-ksp-annotations-jvm-new-voice-encryption-modes-0170-SNAPSHOT.jar",
+          "size": 4350,
+          "sha512": "665ba1e7650c7805db573e391f47c47709af33bfab8eaca6c53d2cf2ab5e55c23370a1195d4405f997d954d6417b59e74dbb2b5307b91ce3d40bd56e3d9304bf",
+          "sha256": "8f63732b6fee6d7b1bcd5c6beabf878ae412804a38bbe3bda109ef879d8fbd14",
+          "sha1": "be3e922aa36784ed2defe20024a2613489b58eb1",
+          "md5": "408d74eb5c52059dbb33878b2444e816"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "ksp-annotations-jvm-sources.jar",
+          "url": "kord-ksp-annotations-jvm-new-voice-encryption-modes-0170-SNAPSHOT-sources.jar",
+          "size": 1200,
+          "sha512": "34642383e14d027a42da882a85e02f0ac6742b49dc4b290389f9ef6840dc72c69b472e5a624d2a465f84b36c96665d676dbdfc04a4b7ca4d1085f7a1affdfe0b",
+          "sha256": "0c176462e51edf8ae8369e6db0f2d2b3c9dcbe1eb1a5f98e6433b3674e4a9daa",
+          "sha1": "2fdf65336269ad40e4bc74778b6d8fbdc558326a",
+          "md5": "c098039c227b6feb99a7cd3434b7eacf"
+        }
+      ]
+    }
+  ]
+}
