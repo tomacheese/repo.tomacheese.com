@@ -1,0 +1,190 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.kord",
+    "module": "kord-rest",
+    "version": "new-voice-encryption-modes-0170-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rest-metadata.jar",
+          "url": "kord-rest-new-voice-encryption-modes-0170-SNAPSHOT.jar",
+          "size": 175196,
+          "sha512": "43feab9baacb0c6a947a0c7513a23690008c34d84b9a39c047c85be38fb172384420732f71fc80474e4e35404932c8a7dddf1435aab91a8743c55fd2db1c207e",
+          "sha256": "3277d7065f3c294261cffbeaac3e41218522aaa8915ca623c96b5de1fa5cdded",
+          "sha1": "87b682b2620e7ab54bf9a9719160122c69ea4688",
+          "md5": "0de15cd386e36e7a080d8a60c11b0854"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "rest-kotlin-sources.jar",
+          "url": "kord-rest-new-voice-encryption-modes-0170-SNAPSHOT-sources.jar",
+          "size": 153633,
+          "sha512": "2b491b6551d56aad305e9f9e722c2db47f4c82d3f9ebbe1e88cdadf8738a1219b0765c43c579f6fe0ce2062a591e8c247deed275b5cc8b3208937f99708773b6",
+          "sha256": "6ba9404357a344e785f33cdd8b2501515d154e2e649091971c9a306880581688",
+          "sha1": "3e5064bfbb1a98bfae8e53dbe6684ce4d1c8ee20",
+          "md5": "d58e7a69fa90a72dec55b41e59d08956"
+        }
+      ]
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kord-rest-js/new-voice-encryption-modes-0170-SNAPSHOT/kord-rest-js-new-voice-encryption-modes-0170-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-js",
+        "version": "new-voice-encryption-modes-0170-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kord-rest-js/new-voice-encryption-modes-0170-SNAPSHOT/kord-rest-js-new-voice-encryption-modes-0170-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-js",
+        "version": "new-voice-encryption-modes-0170-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kord-rest-js/new-voice-encryption-modes-0170-SNAPSHOT/kord-rest-js-new-voice-encryption-modes-0170-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-js",
+        "version": "new-voice-encryption-modes-0170-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kord-rest-jvm/new-voice-encryption-modes-0170-SNAPSHOT/kord-rest-jvm-new-voice-encryption-modes-0170-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-jvm",
+        "version": "new-voice-encryption-modes-0170-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kord-rest-jvm/new-voice-encryption-modes-0170-SNAPSHOT/kord-rest-jvm-new-voice-encryption-modes-0170-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-jvm",
+        "version": "new-voice-encryption-modes-0170-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kord-rest-jvm/new-voice-encryption-modes-0170-SNAPSHOT/kord-rest-jvm-new-voice-encryption-modes-0170-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-jvm",
+        "version": "new-voice-encryption-modes-0170-SNAPSHOT"
+      }
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.kord",
+    "module": "kord-bom",
+    "version": "new-voice-encryption-modes-0170-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "dev.kord",
+          "module": "kord-common-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-core-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-core-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-core",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-core-voice",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-ksp-annotations-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-ksp-annotations-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-ksp-annotations",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-rest-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-rest-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-rest",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-voice",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "platform",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "dev.kord",
+          "module": "kord-common-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-core-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-core-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-core",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-core-voice",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-ksp-annotations-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-ksp-annotations-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-ksp-annotations",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-rest-js",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-rest-jvm",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-rest",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-voice",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        }
+      ]
+    }
+  ]
+}

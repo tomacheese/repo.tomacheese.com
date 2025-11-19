@@ -1,0 +1,158 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-gateway/new-voice-encryption-modes-0170-SNAPSHOT/kord-gateway-new-voice-encryption-modes-0170-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-gateway",
+    "version": "new-voice-encryption-modes-0170-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gateway-jvm.jar",
+          "url": "kord-gateway-jvm-new-voice-encryption-modes-0170-SNAPSHOT.jar",
+          "size": 593398,
+          "sha512": "74e6dfae5f94d44a6c0ea3fb81981ab0ac6bae74fac59e4ac3ac58f4c1a06bc6698164ae6f09218b1571903e2343d4b2602f38435e2b9b337aa83e4183c00443",
+          "sha256": "9a8aac6414db8138def2ba489dad8f881a039d27500d2c71d4022fb8a6d76f0e",
+          "sha1": "bdc2040f48319b2d01439b3346048faa42670aab",
+          "md5": "16897705f7a1e7820ba900fa4b1b26e5"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "new-voice-encryption-modes-0170-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.2.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.17"
+          }
+        },
+        {
+          "group": "io.github.oshai",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "7.0.13"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gateway-jvm.jar",
+          "url": "kord-gateway-jvm-new-voice-encryption-modes-0170-SNAPSHOT.jar",
+          "size": 593398,
+          "sha512": "74e6dfae5f94d44a6c0ea3fb81981ab0ac6bae74fac59e4ac3ac58f4c1a06bc6698164ae6f09218b1571903e2343d4b2602f38435e2b9b337aa83e4183c00443",
+          "sha256": "9a8aac6414db8138def2ba489dad8f881a039d27500d2c71d4022fb8a6d76f0e",
+          "sha1": "bdc2040f48319b2d01439b3346048faa42670aab",
+          "md5": "16897705f7a1e7820ba900fa4b1b26e5"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "gateway-jvm-sources.jar",
+          "url": "kord-gateway-jvm-new-voice-encryption-modes-0170-SNAPSHOT-sources.jar",
+          "size": 36975,
+          "sha512": "46b355f4fd06fcb9de40aeb653517cd7835e4aaa9e13bf37efc775f777b5012efb0ed75a3ecd6383c577752c006c808a1340888642e6b19f7c6799f5d2fe1d7d",
+          "sha256": "74995962140e6642e63964e43979157372fa1cecd057d0b17598cbe44ee696e3",
+          "sha1": "c85191c3abb727116e91acc5ba840c0ec1ec329e",
+          "md5": "cb879ce73218ec691cfa890e12e86416"
+        }
+      ]
+    }
+  ]
+}
