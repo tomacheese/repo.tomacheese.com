@@ -1,0 +1,200 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-core/new-voice-encryption-modes-SNAPSHOT/kord-core-new-voice-encryption-modes-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-core",
+    "version": "new-voice-encryption-modes-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-rest",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord.cache",
+          "module": "cache-api",
+          "version": {
+            "requires": "0.5.4"
+          }
+        },
+        {
+          "group": "dev.kord.cache",
+          "module": "cache-map",
+          "version": {
+            "requires": "0.5.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-js.klib",
+          "url": "kord-core-js-new-voice-encryption-modes-SNAPSHOT.klib",
+          "size": 1965693,
+          "sha512": "6f244f13ea09b536132a3a7ee6717dee31674c5ba3578a7e5520ec682b89dcc2d64d493c3afe787f44d2a2af1a42c308b09465654651eeded503f0e364a04b07",
+          "sha256": "80b24b61273160d1d0378f5fa36a0ebc038cee664eb1ea016782e7be9d224181",
+          "sha1": "c1989f7ae1a2f52ecc49b2a032c7615a93fc7cd1",
+          "md5": "c6c9e7217da4baa0d8d9430fef158e46"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlinx-atomicfu-runtime",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-rest",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord.cache",
+          "module": "cache-api",
+          "version": {
+            "requires": "0.5.4"
+          }
+        },
+        {
+          "group": "dev.kord.cache",
+          "module": "cache-map",
+          "version": {
+            "requires": "0.5.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "io.github.oshai",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "7.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-js.klib",
+          "url": "kord-core-js-new-voice-encryption-modes-SNAPSHOT.klib",
+          "size": 1965693,
+          "sha512": "6f244f13ea09b536132a3a7ee6717dee31674c5ba3578a7e5520ec682b89dcc2d64d493c3afe787f44d2a2af1a42c308b09465654651eeded503f0e364a04b07",
+          "sha256": "80b24b61273160d1d0378f5fa36a0ebc038cee664eb1ea016782e7be9d224181",
+          "sha1": "c1989f7ae1a2f52ecc49b2a032c7615a93fc7cd1",
+          "md5": "c6c9e7217da4baa0d8d9430fef158e46"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "core-js-sources.jar",
+          "url": "kord-core-js-new-voice-encryption-modes-SNAPSHOT-sources.jar",
+          "size": 331259,
+          "sha512": "ca17ee7d14dcca4e71a8f27152a67fb8c0c0859cd0f35fe80f12fb422411d084a3174c1fd3c41579889a1ab06e2f212f95ea12836ce579b9d6f1691ef717cb51",
+          "sha256": "17f3f5f2c139887306a30fe3e2dbfb448ff040eb05e0c9b337e466e1cc438178",
+          "sha1": "2ba84a9f8430ba2a539e2d29ba015b4b0ee2fc1b",
+          "md5": "845299f5c51e3f2c685e6bee6617e8ce"
+        }
+      ]
+    }
+  ]
+}

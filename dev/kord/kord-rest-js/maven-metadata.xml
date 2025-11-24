@@ -3,10 +3,10 @@
   <groupId>dev.kord</groupId>
   <artifactId>kord-rest-js</artifactId>
   <versioning>
-    <latest>new-voice-encryption-modes-0170-SNAPSHOT</latest>
+    <latest>new-voice-encryption-modes-SNAPSHOT</latest>
     <versions>
-      <version>new-voice-encryption-modes-0170-SNAPSHOT</version>
+      <version>new-voice-encryption-modes-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20251119215835</lastUpdated>
+    <lastUpdated>20251124045940</lastUpdated>
   </versioning>
 </metadata>

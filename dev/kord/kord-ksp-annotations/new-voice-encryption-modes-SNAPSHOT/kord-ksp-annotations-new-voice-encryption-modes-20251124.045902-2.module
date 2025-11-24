@@ -1,0 +1,169 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.kord",
+    "module": "kord-ksp-annotations",
+    "version": "new-voice-encryption-modes-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksp-annotations-metadata.jar",
+          "url": "kord-ksp-annotations-new-voice-encryption-modes-SNAPSHOT.jar",
+          "size": 2643,
+          "sha512": "f975a407ee5d9d48831322d543698883850e7d3bd3bb44df791ff7babe6d817aa0d9c936abe7a4826e6e7d6a1f64de26a1fc72046398f82b7cf8c9a5a86e1fd2",
+          "sha256": "d0502ca56fe75fbe4dd35d9e6cfca43f3a247c36369e000a87adc116f1b637ad",
+          "sha1": "1c8f301de5cae8a30e446f39138d3dd2f8a32fc7",
+          "md5": "580244ac1b47f23cb921fab6be8e9afe"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "ksp-annotations-kotlin-sources.jar",
+          "url": "kord-ksp-annotations-new-voice-encryption-modes-SNAPSHOT-sources.jar",
+          "size": 1206,
+          "sha512": "27ea4fa9bd66ed8f2bfa826e76dbfbf57591ee12c4c86d0e62c2c5e31d00e489b2fbac9674bbc42066805d8d30a18ada0e33884112f5a3d426d0217d38320267",
+          "sha256": "3c202d1a53673cb82a8142734f5d24cedc5d8ccdaa287b8697eb98d2051b2ce0",
+          "sha1": "64a743e7569950db4d3efd90034319b36e928dc4",
+          "md5": "0e70cf928aaf0357608f57000e615a88"
+        }
+      ]
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kord-ksp-annotations-js/new-voice-encryption-modes-SNAPSHOT/kord-ksp-annotations-js-new-voice-encryption-modes-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-ksp-annotations-js",
+        "version": "new-voice-encryption-modes-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kord-ksp-annotations-js/new-voice-encryption-modes-SNAPSHOT/kord-ksp-annotations-js-new-voice-encryption-modes-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-ksp-annotations-js",
+        "version": "new-voice-encryption-modes-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kord-ksp-annotations-js/new-voice-encryption-modes-SNAPSHOT/kord-ksp-annotations-js-new-voice-encryption-modes-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-ksp-annotations-js",
+        "version": "new-voice-encryption-modes-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kord-ksp-annotations-jvm/new-voice-encryption-modes-SNAPSHOT/kord-ksp-annotations-jvm-new-voice-encryption-modes-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-ksp-annotations-jvm",
+        "version": "new-voice-encryption-modes-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kord-ksp-annotations-jvm/new-voice-encryption-modes-SNAPSHOT/kord-ksp-annotations-jvm-new-voice-encryption-modes-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-ksp-annotations-jvm",
+        "version": "new-voice-encryption-modes-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kord-ksp-annotations-jvm/new-voice-encryption-modes-SNAPSHOT/kord-ksp-annotations-jvm-new-voice-encryption-modes-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-ksp-annotations-jvm",
+        "version": "new-voice-encryption-modes-SNAPSHOT"
+      }
+    }
+  ]
+}
