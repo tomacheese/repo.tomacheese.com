@@ -1,0 +1,190 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.kord",
+    "module": "kord-rest",
+    "version": "0.15.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rest-metadata.jar",
+          "url": "kord-rest-0.15.0-SNAPSHOT.jar",
+          "size": 168275,
+          "sha512": "8321a35ce7d3eff3a961adfd07fa424a6ca37f8f0050c49f24d6db526589c92a7f1ad4395506d20e06e280842e042b1502f2df195dd17fa184a1b0bf546014ec",
+          "sha256": "54657cc9d23e45aafb6c701b0251259cf10e754fcf77c9705fdd802482f1c21f",
+          "sha1": "1ebc8a5f8069f97bf2d9095827770b56421d5620",
+          "md5": "7075b76734023c36685e987ace7fa3fd"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "rest-kotlin-sources.jar",
+          "url": "kord-rest-0.15.0-SNAPSHOT-sources.jar",
+          "size": 140447,
+          "sha512": "998f4e097acc5cdbd974f3704613c2507f0200a98b0e9eaf407b06db14648c33b0309a9e4b37908b9c585a00558b2e242903c8534ee259b7f7465fe75276e027",
+          "sha256": "789810435e713d5b931ec2708bf467ec0dc31c55873ebc7859373be05f55fecf",
+          "sha1": "925efb1f018512562e0b4b69c18175cfa0a6f10b",
+          "md5": "f35353c84cc256d40314957dcafd3501"
+        }
+      ]
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kord-rest-js/0.15.0-SNAPSHOT/kord-rest-js-0.15.0-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-js",
+        "version": "0.15.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kord-rest-js/0.15.0-SNAPSHOT/kord-rest-js-0.15.0-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-js",
+        "version": "0.15.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kord-rest-js/0.15.0-SNAPSHOT/kord-rest-js-0.15.0-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-js",
+        "version": "0.15.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kord-rest-jvm/0.15.0-SNAPSHOT/kord-rest-jvm-0.15.0-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-jvm",
+        "version": "0.15.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kord-rest-jvm/0.15.0-SNAPSHOT/kord-rest-jvm-0.15.0-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-jvm",
+        "version": "0.15.0-SNAPSHOT"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kord-rest-jvm/0.15.0-SNAPSHOT/kord-rest-jvm-0.15.0-SNAPSHOT.module",
+        "group": "dev.kord",
+        "module": "kord-rest-jvm",
+        "version": "0.15.0-SNAPSHOT"
+      }
+    }
+  ]
+}

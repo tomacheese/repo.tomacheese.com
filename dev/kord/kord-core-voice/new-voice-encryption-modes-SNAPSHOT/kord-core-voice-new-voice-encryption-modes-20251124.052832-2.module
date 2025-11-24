@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.kord",
+    "module": "kord-core-voice",
+    "version": "new-voice-encryption-modes-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "dev.kord",
+          "module": "kord-core",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-voice",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kord-core-voice-new-voice-encryption-modes-SNAPSHOT.jar",
+          "url": "kord-core-voice-new-voice-encryption-modes-SNAPSHOT.jar",
+          "size": 4441,
+          "sha512": "0239c8c4f74e3b06752983b3a3e0079b38334bd987e5f96646f0bae593fe25d76ab3fb3de539c538c9976b4dbfcaa486e64e80812c72755fa58381e0eed9066b",
+          "sha256": "639a0a483ad2e65d844167377fb3826268831a23586c0c3d44803f79bcb6c314",
+          "sha1": "b428ffd0b2c858f63180988ba5e3d56ca715911e",
+          "md5": "a2b992b04f17e4eb3d6010c00487b94a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "dev.kord",
+          "module": "kord-core",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-voice",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kord-core-voice-new-voice-encryption-modes-SNAPSHOT.jar",
+          "url": "kord-core-voice-new-voice-encryption-modes-SNAPSHOT.jar",
+          "size": 4441,
+          "sha512": "0239c8c4f74e3b06752983b3a3e0079b38334bd987e5f96646f0bae593fe25d76ab3fb3de539c538c9976b4dbfcaa486e64e80812c72755fa58381e0eed9066b",
+          "sha256": "639a0a483ad2e65d844167377fb3826268831a23586c0c3d44803f79bcb6c314",
+          "sha1": "b428ffd0b2c858f63180988ba5e3d56ca715911e",
+          "md5": "a2b992b04f17e4eb3d6010c00487b94a"
+        }
+      ]
+    }
+  ]
+}

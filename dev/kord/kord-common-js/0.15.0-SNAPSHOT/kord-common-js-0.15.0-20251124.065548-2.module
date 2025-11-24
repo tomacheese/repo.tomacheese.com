@@ -1,0 +1,214 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-common/0.15.0-SNAPSHOT/kord-common-0.15.0-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-common",
+    "version": "0.15.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-js",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-js.klib",
+          "url": "kord-common-js-0.15.0-SNAPSHOT.klib",
+          "size": 1201331,
+          "sha512": "ed42390052916fe176a034d6d515e9c59cb9562867d4034d8d8fe85ec5c5dcac0ef267101640385f03ba6d53d802cc92e87665d5729d290401f289bcbe3b7d2a",
+          "sha256": "60e54118e38d70095c4933611eede8e8eaefac477336acd9494c4460ab7d2436",
+          "sha1": "0b6280bcdc14577acb27d9b938e65eff0476a24c",
+          "md5": "f555dd64257d6137e215a111180da5fe"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlinx-atomicfu-runtime",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-js",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-ksp-annotations",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "com.ionspin.kotlin",
+          "module": "bignum",
+          "version": {
+            "requires": "0.3.10"
+          }
+        },
+        {
+          "group": "co.touchlab",
+          "module": "stately-concurrent-collections",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-js.klib",
+          "url": "kord-common-js-0.15.0-SNAPSHOT.klib",
+          "size": 1201331,
+          "sha512": "ed42390052916fe176a034d6d515e9c59cb9562867d4034d8d8fe85ec5c5dcac0ef267101640385f03ba6d53d802cc92e87665d5729d290401f289bcbe3b7d2a",
+          "sha256": "60e54118e38d70095c4933611eede8e8eaefac477336acd9494c4460ab7d2436",
+          "sha1": "0b6280bcdc14577acb27d9b938e65eff0476a24c",
+          "md5": "f555dd64257d6137e215a111180da5fe"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "common-js-sources.jar",
+          "url": "kord-common-js-0.15.0-SNAPSHOT-sources.jar",
+          "size": 191980,
+          "sha512": "a49f034096458594759326fd288c72e1d89af71257100de57a12852f1ba46e571a965ab5bb48d53a7a8bb29022f6f2edd6d90d338669804c058a824b328a2ec3",
+          "sha256": "d4a765d4249905160d4fbfc8eba98a4b4079d80ff5e6b5c88e18430a301867a2",
+          "sha1": "9ae0cc605a935382f64df21e62f160fe04bb9d70",
+          "md5": "6cbc36cd70b2ab7a9b24e529f60080d9"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-ksp-annotations/0.15.0-SNAPSHOT/kord-ksp-annotations-0.15.0-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-ksp-annotations",
+    "version": "0.15.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksp-annotations-jvm.jar",
+          "url": "kord-ksp-annotations-jvm-0.15.0-SNAPSHOT.jar",
+          "size": 4322,
+          "sha512": "08f08689d0aca051a0a9a646637313a6e9b598525bf4aab64f976b9eda667efe0336714601bf9698b900b80d099e8fe4caf120dadc5de07da7662af363e1191d",
+          "sha256": "40708e69792686aa9e7cce4561f54ed5a38dfb72c62017a5c87bbef64f786ed4",
+          "sha1": "58a2f60787b24f57c322475d83648d634600ab09",
+          "md5": "74e9770357719b85f798a9f0ec5631e9"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksp-annotations-jvm.jar",
+          "url": "kord-ksp-annotations-jvm-0.15.0-SNAPSHOT.jar",
+          "size": 4322,
+          "sha512": "08f08689d0aca051a0a9a646637313a6e9b598525bf4aab64f976b9eda667efe0336714601bf9698b900b80d099e8fe4caf120dadc5de07da7662af363e1191d",
+          "sha256": "40708e69792686aa9e7cce4561f54ed5a38dfb72c62017a5c87bbef64f786ed4",
+          "sha1": "58a2f60787b24f57c322475d83648d634600ab09",
+          "md5": "74e9770357719b85f798a9f0ec5631e9"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "ksp-annotations-jvm-sources.jar",
+          "url": "kord-ksp-annotations-jvm-0.15.0-SNAPSHOT-sources.jar",
+          "size": 1200,
+          "sha512": "f35a7b87dad618f4338c4a2e1272db570f1a4f142f9964343fca94ed107cb1c5b46b694cf26a20293b3819957ece88dc6941114554cfc7afa7a8e408661a09b2",
+          "sha256": "b4684fc6d5a31865be30ead04d2ac202134c6cf366987b31d0b33e197f57e1c1",
+          "sha1": "ff3b547ebe05382dba34368e01617e7c0f377df9",
+          "md5": "9f42097c3f6f77cb22d9561e781f2471"
+        }
+      ]
+    }
+  ]
+}

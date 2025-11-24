@@ -3,10 +3,11 @@
   <groupId>dev.kord</groupId>
   <artifactId>kord-common-js</artifactId>
   <versioning>
-    <latest>new-voice-encryption-modes-SNAPSHOT</latest>
+    <latest>0.15.0-SNAPSHOT</latest>
     <versions>
       <version>new-voice-encryption-modes-SNAPSHOT</version>
+      <version>0.15.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20251124045927</lastUpdated>
+    <lastUpdated>20251124065656</lastUpdated>
   </versioning>
 </metadata>

@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.kord",
+    "module": "kord-core-voice",
+    "version": "0.15.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "dev.kord",
+          "module": "kord-core",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-voice",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kord-core-voice-0.15.0-SNAPSHOT.jar",
+          "url": "kord-core-voice-0.15.0-SNAPSHOT.jar",
+          "size": 4442,
+          "sha512": "c20835655b571abc9f7de5da9252ba8708c38588ee219e8a3bfce2a67593f585bf8be1bb11e33e392fd7247538d424f97b39a2af8afee9465f6c25c63fa7471d",
+          "sha256": "1873d70b028bae1b33ac33c420d9c55964709b6b4c40754d27fff643490df1d3",
+          "sha1": "7ce4b9c380beb41a08b8b0c3e4b1389e5b02c467",
+          "md5": "418e9e2d3f90d847649f9d73a28759c2"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "dev.kord",
+          "module": "kord-core",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-voice",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kord-core-voice-0.15.0-SNAPSHOT.jar",
+          "url": "kord-core-voice-0.15.0-SNAPSHOT.jar",
+          "size": 4442,
+          "sha512": "c20835655b571abc9f7de5da9252ba8708c38588ee219e8a3bfce2a67593f585bf8be1bb11e33e392fd7247538d424f97b39a2af8afee9465f6c25c63fa7471d",
+          "sha256": "1873d70b028bae1b33ac33c420d9c55964709b6b4c40754d27fff643490df1d3",
+          "sha1": "7ce4b9c380beb41a08b8b0c3e4b1389e5b02c467",
+          "md5": "418e9e2d3f90d847649f9d73a28759c2"
+        }
+      ]
+    }
+  ]
+}

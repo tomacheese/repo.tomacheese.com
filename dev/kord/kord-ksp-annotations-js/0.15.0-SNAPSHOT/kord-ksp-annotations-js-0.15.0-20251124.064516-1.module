@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-ksp-annotations/0.15.0-SNAPSHOT/kord-ksp-annotations-0.15.0-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-ksp-annotations",
+    "version": "0.15.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksp-annotations-js.klib",
+          "url": "kord-ksp-annotations-js-0.15.0-SNAPSHOT.klib",
+          "size": 7433,
+          "sha512": "dba556adc6126ff755e3cb95a5c7d147f1dbe20a7c0eb00efda59578bf9e492493c90c515aa2cd6b386be325a574d3735a1509096548b9e723cb07c21ea874dd",
+          "sha256": "df928fdf48933ebd327a3739e0c9707d0d5f813b881dc0f99491e7bdbdee8185",
+          "sha1": "09859f155077c90c4ff6a89c5641716bc00061cd",
+          "md5": "eb42721be811ef76d942d9d02a8bb8e3"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksp-annotations-js.klib",
+          "url": "kord-ksp-annotations-js-0.15.0-SNAPSHOT.klib",
+          "size": 7433,
+          "sha512": "dba556adc6126ff755e3cb95a5c7d147f1dbe20a7c0eb00efda59578bf9e492493c90c515aa2cd6b386be325a574d3735a1509096548b9e723cb07c21ea874dd",
+          "sha256": "df928fdf48933ebd327a3739e0c9707d0d5f813b881dc0f99491e7bdbdee8185",
+          "sha1": "09859f155077c90c4ff6a89c5641716bc00061cd",
+          "md5": "eb42721be811ef76d942d9d02a8bb8e3"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "ksp-annotations-js-sources.jar",
+          "url": "kord-ksp-annotations-js-0.15.0-SNAPSHOT-sources.jar",
+          "size": 1200,
+          "sha512": "f35a7b87dad618f4338c4a2e1272db570f1a4f142f9964343fca94ed107cb1c5b46b694cf26a20293b3819957ece88dc6941114554cfc7afa7a8e408661a09b2",
+          "sha256": "b4684fc6d5a31865be30ead04d2ac202134c6cf366987b31d0b33e197f57e1c1",
+          "sha1": "ff3b547ebe05382dba34368e01617e7c0f377df9",
+          "md5": "9f42097c3f6f77cb22d9561e781f2471"
+        }
+      ]
+    }
+  ]
+}

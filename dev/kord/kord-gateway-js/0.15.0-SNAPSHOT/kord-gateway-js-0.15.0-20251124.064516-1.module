@@ -1,0 +1,193 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-gateway/0.15.0-SNAPSHOT/kord-gateway-0.15.0-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-gateway",
+    "version": "0.15.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gateway-js.klib",
+          "url": "kord-gateway-js-0.15.0-SNAPSHOT.klib",
+          "size": 299843,
+          "sha512": "f2bf4a696b8a32cb86044a138281f3faa6cb5f2122a038d3eb15448a1c0367760f6f05cb85598dea78217a0775f3519e29e06cb19a2c24a95be72d521e2c8648",
+          "sha256": "30cf54c32974790f07b411ac5c9815c190560f723b9a603098a359fc4342c17a",
+          "sha1": "b5f5ed546e99adea9ae40da11c3197259712a315",
+          "md5": "5e296def53dfb785dc53231eb9e3073a"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlinx-atomicfu-runtime",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-node",
+          "version": {
+            "requires": "22.5.4-pre.818"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-ksp-annotations",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.github.oshai",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "7.0.0"
+          }
+        },
+        {
+          "group": "io.github.microutils",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "3.0.5"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gateway-js.klib",
+          "url": "kord-gateway-js-0.15.0-SNAPSHOT.klib",
+          "size": 299843,
+          "sha512": "f2bf4a696b8a32cb86044a138281f3faa6cb5f2122a038d3eb15448a1c0367760f6f05cb85598dea78217a0775f3519e29e06cb19a2c24a95be72d521e2c8648",
+          "sha256": "30cf54c32974790f07b411ac5c9815c190560f723b9a603098a359fc4342c17a",
+          "sha1": "b5f5ed546e99adea9ae40da11c3197259712a315",
+          "md5": "5e296def53dfb785dc53231eb9e3073a"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "gateway-js-sources.jar",
+          "url": "kord-gateway-js-0.15.0-SNAPSHOT-sources.jar",
+          "size": 37872,
+          "sha512": "a803be49b6fbdc4c348a276fbdfcefbd20242beab8c3e6e7b2a441fffcf55648096458fdd048ae6397f59c23358352ca01bed9f9e2066f6ab30cb23ba1d4df69",
+          "sha256": "7a47204d313e23fb8d68e72bc493823c17fb06a6e30485e8e8aaf1ce53876a9b",
+          "sha1": "d3598051dc06b9781fe2fbc5283bf27d4e2f0b3a",
+          "md5": "a70f4d7031d4501c0e2379126da2c3d9"
+        }
+      ]
+    }
+  ]
+}
