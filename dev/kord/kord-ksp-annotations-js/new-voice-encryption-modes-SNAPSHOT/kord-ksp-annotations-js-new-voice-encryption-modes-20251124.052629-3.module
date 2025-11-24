@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-ksp-annotations/new-voice-encryption-modes-SNAPSHOT/kord-ksp-annotations-new-voice-encryption-modes-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-ksp-annotations",
+    "version": "new-voice-encryption-modes-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksp-annotations-js.klib",
+          "url": "kord-ksp-annotations-js-new-voice-encryption-modes-SNAPSHOT.klib",
+          "size": 7428,
+          "sha512": "1632084aaf1755878c533c09e825b451be58aa39db760a16c98cf8b85f8f6bba264127f39a17667af68f829ec55c1d4ee0a1e08c999ebcfb0ac27548227f9e08",
+          "sha256": "fcea86734e6f410eb718a43a97a61624cebcb3d2f939317ff6da277022726187",
+          "sha1": "bc1567ce9b31ecf211f72f8339747f3d7c01062c",
+          "md5": "f900263427b5b04978a768248cc0a91f"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ksp-annotations-js.klib",
+          "url": "kord-ksp-annotations-js-new-voice-encryption-modes-SNAPSHOT.klib",
+          "size": 7428,
+          "sha512": "1632084aaf1755878c533c09e825b451be58aa39db760a16c98cf8b85f8f6bba264127f39a17667af68f829ec55c1d4ee0a1e08c999ebcfb0ac27548227f9e08",
+          "sha256": "fcea86734e6f410eb718a43a97a61624cebcb3d2f939317ff6da277022726187",
+          "sha1": "bc1567ce9b31ecf211f72f8339747f3d7c01062c",
+          "md5": "f900263427b5b04978a768248cc0a91f"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "ksp-annotations-js-sources.jar",
+          "url": "kord-ksp-annotations-js-new-voice-encryption-modes-SNAPSHOT-sources.jar",
+          "size": 1206,
+          "sha512": "27ea4fa9bd66ed8f2bfa826e76dbfbf57591ee12c4c86d0e62c2c5e31d00e489b2fbac9674bbc42066805d8d30a18ada0e33884112f5a3d426d0217d38320267",
+          "sha256": "3c202d1a53673cb82a8142734f5d24cedc5d8ccdaa287b8697eb98d2051b2ce0",
+          "sha1": "64a743e7569950db4d3efd90034319b36e928dc4",
+          "md5": "0e70cf928aaf0357608f57000e615a88"
+        }
+      ]
+    }
+  ]
+}

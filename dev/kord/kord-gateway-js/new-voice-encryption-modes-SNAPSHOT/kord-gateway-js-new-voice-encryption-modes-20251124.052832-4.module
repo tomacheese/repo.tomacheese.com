@@ -1,0 +1,186 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-gateway/new-voice-encryption-modes-SNAPSHOT/kord-gateway-new-voice-encryption-modes-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-gateway",
+    "version": "new-voice-encryption-modes-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gateway-js.klib",
+          "url": "kord-gateway-js-new-voice-encryption-modes-SNAPSHOT.klib",
+          "size": 298219,
+          "sha512": "7c41e6117ef70708803a3b8f1a199452b05471fcf50b89b5ca791db19828dee6ccaeda84289848955ea3f5211ecd750e98216c419ff87c44a10ee40e4d26e1ff",
+          "sha256": "d66e95fd760132b7e8cee764aa10d809e8cc5bd555cf5be09e09586c05c6b28b",
+          "sha1": "3edc4f80ae8843160250b442b34cabe32fad840f",
+          "md5": "625865eee0b115e6a788c2757639d753"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlinx-atomicfu-runtime",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-content-negotiation",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-serialization-kotlinx-json",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-node",
+          "version": {
+            "requires": "22.5.4-pre.818"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-ksp-annotations",
+          "version": {
+            "requires": "new-voice-encryption-modes-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.github.oshai",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "7.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gateway-js.klib",
+          "url": "kord-gateway-js-new-voice-encryption-modes-SNAPSHOT.klib",
+          "size": 298219,
+          "sha512": "7c41e6117ef70708803a3b8f1a199452b05471fcf50b89b5ca791db19828dee6ccaeda84289848955ea3f5211ecd750e98216c419ff87c44a10ee40e4d26e1ff",
+          "sha256": "d66e95fd760132b7e8cee764aa10d809e8cc5bd555cf5be09e09586c05c6b28b",
+          "sha1": "3edc4f80ae8843160250b442b34cabe32fad840f",
+          "md5": "625865eee0b115e6a788c2757639d753"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "gateway-js-sources.jar",
+          "url": "kord-gateway-js-new-voice-encryption-modes-SNAPSHOT-sources.jar",
+          "size": 37667,
+          "sha512": "39a161399c5e3a18d9c054b6276442711bed181e434edf2604bf80f794813d2dad9646e8a08375f8fd75db852302816c7dc97efa7b4ebad4519d5427574ed3eb",
+          "sha256": "6cc9c1b863546682e4344a090e3c0f9a867541347aa26e32ec74c8a42ff2764d",
+          "sha1": "c917ba6c0c1744e515fefdbbd564936c2e38b772",
+          "md5": "958406257b698971e73204f33de80de3"
+        }
+      ]
+    }
+  ]
+}

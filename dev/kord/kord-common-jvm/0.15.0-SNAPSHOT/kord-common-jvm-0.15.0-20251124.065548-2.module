@@ -1,0 +1,172 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kord-common/0.15.0-SNAPSHOT/kord-common-0.15.0-SNAPSHOT.module",
+    "group": "dev.kord",
+    "module": "kord-common",
+    "version": "0.15.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-okhttp",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-jvm.jar",
+          "url": "kord-common-jvm-0.15.0-SNAPSHOT.jar",
+          "size": 2053867,
+          "sha512": "173072432267877ddfd92d0e0f6ba083c88934a20d65fda4aef823449c84e4e7985e58dae4f450c1590f9fa3e82659336f7e8312455d51ed3a5a0a406c85ae1e",
+          "sha256": "eccbc1f8591c71dda517dee220c73393f55c80311d302989aa4e3870b2c04ffd",
+          "sha1": "4a72e4cb940443aa8846b7e9ac98dc540b4a3106",
+          "md5": "c8489400ff13fc8f2dd3e686c2043515"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-okhttp",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-datetime",
+          "version": {
+            "requires": "0.6.1"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-client-core",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "common-jvm.jar",
+          "url": "kord-common-jvm-0.15.0-SNAPSHOT.jar",
+          "size": 2053867,
+          "sha512": "173072432267877ddfd92d0e0f6ba083c88934a20d65fda4aef823449c84e4e7985e58dae4f450c1590f9fa3e82659336f7e8312455d51ed3a5a0a406c85ae1e",
+          "sha256": "eccbc1f8591c71dda517dee220c73393f55c80311d302989aa4e3870b2c04ffd",
+          "sha1": "4a72e4cb940443aa8846b7e9ac98dc540b4a3106",
+          "md5": "c8489400ff13fc8f2dd3e686c2043515"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "common-jvm-sources.jar",
+          "url": "kord-common-jvm-0.15.0-SNAPSHOT-sources.jar",
+          "size": 192345,
+          "sha512": "7d2f6d3b64ad75dc229da0e2a5420f0f43368cae29b19b19d9600189008bbd9897534122d7f874238fed4f152d2d0f64f814150d3158d0d84e67094c518c8e92",
+          "sha256": "ebad535f24b274926181386946f30699ee9482bf960f987ea007dd805a5db983",
+          "sha1": "a6d18893d10f5f04d371427fc5f54bc374c28e78",
+          "md5": "44f01167d5bce32aec4e62f12a1d3bcd"
+        }
+      ]
+    }
+  ]
+}

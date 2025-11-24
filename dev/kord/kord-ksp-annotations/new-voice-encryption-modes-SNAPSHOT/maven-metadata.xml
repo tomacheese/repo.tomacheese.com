@@ -3,44 +3,44 @@
   <groupId>dev.kord</groupId>
   <artifactId>kord-ksp-annotations</artifactId>
   <versioning>
-    <lastUpdated>20251124045902</lastUpdated>
+    <lastUpdated>20251124052832</lastUpdated>
     <snapshot>
-      <timestamp>20251124.045902</timestamp>
-      <buildNumber>2</buildNumber>
+      <timestamp>20251124.052832</timestamp>
+      <buildNumber>4</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
+        <extension>jar</extension>
+        <value>new-voice-encryption-modes-20251124.052832-4</value>
+        <updated>20251124052832</updated>
+      </snapshotVersion>
+      <snapshotVersion>
         <extension>pom</extension>
-        <value>new-voice-encryption-modes-20251124.045902-2</value>
-        <updated>20251124045902</updated>
-      </snapshotVersion>
-      <snapshotVersion>
-        <extension>jar</extension>
-        <value>new-voice-encryption-modes-20251124.045902-2</value>
-        <updated>20251124045902</updated>
-      </snapshotVersion>
-      <snapshotVersion>
-        <extension>module</extension>
-        <value>new-voice-encryption-modes-20251124.045902-2</value>
-        <updated>20251124045902</updated>
-      </snapshotVersion>
-      <snapshotVersion>
-        <classifier>javadoc</classifier>
-        <extension>jar</extension>
-        <value>new-voice-encryption-modes-20251124.045902-2</value>
-        <updated>20251124045902</updated>
-      </snapshotVersion>
-      <snapshotVersion>
-        <classifier>sources</classifier>
-        <extension>jar</extension>
-        <value>new-voice-encryption-modes-20251124.045902-2</value>
-        <updated>20251124045902</updated>
+        <value>new-voice-encryption-modes-20251124.052832-4</value>
+        <updated>20251124052832</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>kotlin-tooling-metadata</classifier>
         <extension>json</extension>
-        <value>new-voice-encryption-modes-20251124.045902-2</value>
-        <updated>20251124045902</updated>
+        <value>new-voice-encryption-modes-20251124.052832-4</value>
+        <updated>20251124052832</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>new-voice-encryption-modes-20251124.052832-4</value>
+        <updated>20251124052832</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>javadoc</classifier>
+        <extension>jar</extension>
+        <value>new-voice-encryption-modes-20251124.052832-4</value>
+        <updated>20251124052832</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>new-voice-encryption-modes-20251124.052832-4</value>
+        <updated>20251124052832</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

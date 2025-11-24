@@ -1,0 +1,145 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "dev.kord",
+    "module": "kord-voice",
+    "version": "0.15.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.10.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-network",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kord-voice-0.15.0-SNAPSHOT.jar",
+          "url": "kord-voice-0.15.0-SNAPSHOT.jar",
+          "size": 607295,
+          "sha512": "0edd00abad1a88edf7bb85e2c8f00d08980d56274504aa0a373cc0ee54ca3454bd481fecd036cbae493051fbf829473ead29b377ae4095704c50f5e6a4096c7c",
+          "sha256": "0fe97ff0986712b43fc175f1b10da239bf38d5628845b6739332866e21bd6f0a",
+          "sha1": "634f857fa333b85d85c1fda61be54ad2717ba260",
+          "md5": "02986e4b22da525435b2e292d4ac7541"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "io.github.oshai",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "7.0.0"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.16"
+          }
+        },
+        {
+          "group": "io.github.microutils",
+          "module": "kotlin-logging",
+          "version": {
+            "requires": "3.0.5"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-common",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "dev.kord",
+          "module": "kord-gateway",
+          "version": {
+            "requires": "0.15.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "io.ktor",
+          "module": "ktor-network",
+          "version": {
+            "requires": "3.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kord-voice-0.15.0-SNAPSHOT.jar",
+          "url": "kord-voice-0.15.0-SNAPSHOT.jar",
+          "size": 607295,
+          "sha512": "0edd00abad1a88edf7bb85e2c8f00d08980d56274504aa0a373cc0ee54ca3454bd481fecd036cbae493051fbf829473ead29b377ae4095704c50f5e6a4096c7c",
+          "sha256": "0fe97ff0986712b43fc175f1b10da239bf38d5628845b6739332866e21bd6f0a",
+          "sha1": "634f857fa333b85d85c1fda61be54ad2717ba260",
+          "md5": "02986e4b22da525435b2e292d4ac7541"
+        }
+      ]
+    }
+  ]
+}
