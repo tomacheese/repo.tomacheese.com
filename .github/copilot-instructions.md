@@ -37,3 +37,4 @@
 ## ドキュメント更新
 
 ## リポジトリ固有
+- 目的: Tomacheese Maven Repository
