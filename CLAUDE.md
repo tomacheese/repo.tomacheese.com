@@ -91,4 +91,6 @@
 6. PR 本文の崩れがないことを確認する。
 
 ## リポジトリ固有
-- 目的: Tomacheese Maven Repository
+- 概要: Tomacheese maven repository
+- 公開 URL: https://repo.tomacheese.com
+- CI 定義: `.github/workflows/` を参照
