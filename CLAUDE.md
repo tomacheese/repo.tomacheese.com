@@ -19,8 +19,8 @@ Claude Code の作業方針とプロジェクト固有ルールを示す。
 
 ## 重要ルール
 
-- 会話と言語は日本語で行う。
-- PR とコミットは Conventional Commits に従う。
+- 会話は日本語で行う。
+- PR とコミットは Conventional Commits に従い、説明は日本語とする。
 - 日本語と英数字の間には半角スペースを挿入する。
 - コメントは日本語、エラーメッセージは英語で記載する。
 
@@ -50,10 +50,10 @@ Claude Code の作業方針とプロジェクト固有ルールを示す。
 # 依存関係のインストール
 pnpm install
 
-# README の生成
+# README の生成 (tsx)
 pnpm start
 
-# ビルド
+# README の生成 (ts-node)
 pnpm build
 
 # Lint/型チェック
@@ -65,7 +65,7 @@ pnpm fix
 
 ## アーキテクチャと主要ファイル
 
-- `com/`, `dev/`, `vexsoftware/`: Maven リポジトリのアーティファクト。
+- `com/`, `dev/`: Maven リポジトリのアーティファクト。
 - `.github/generate-readme/`: README 生成ツール (TypeScript)。
 - `.github/workflows/`: CI/CD ワークフロー。
 

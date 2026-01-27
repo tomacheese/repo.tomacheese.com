@@ -9,8 +9,8 @@
 ## 共通ルール
 
 - 会話は日本語で行う。
-- PR とコミットは Conventional Commits に従う。
-- 日本語と英数字の間には半角スペースを入れる。
+- PR とコミットは Conventional Commits に従い、説明は日本語とする。
+- 日本語と英数字の間には半角スペースを挿入する。
 
 ## 技術スタック
 
@@ -26,10 +26,10 @@ README 生成ツール (`.github/generate-readme`) のディレクトリで実�
 # 依存関係のインストール
 pnpm install
 
-# README の生成 (ビルド)
+# README の生成 (tsx)
 pnpm start
 
-# ビルド (ts-node)
+# README の生成 (ts-node)
 pnpm build
 
 # 型チェック
