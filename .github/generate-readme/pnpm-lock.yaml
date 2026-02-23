@@ -33,8 +33,8 @@ importers:
         specifier: 7.2.1
         version: 7.2.1(eslint@10.0.0)
       fast-xml-parser:
-        specifier: 5.3.6
-        version: 5.3.6
+        specifier: 5.3.7
+        version: 5.3.7
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -755,8 +755,8 @@ packages:
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
 
-  fast-xml-parser@5.3.6:
-    resolution: {integrity: sha512-QNI3sAvSvaOiaMl8FYU4trnEzCwiRr8XMWgAHzlrWpTSj+QaCSvOf1h82OEP1s4hiAXhnbXSyFWCf4ldZzZRVA==}
+  fast-xml-parser@5.3.7:
+    resolution: {integrity: sha512-JzVLro9NQv92pOM/jTCR6mHlJh2FGwtomH8ZQjhFj/R29P2Fnj38OgPJVtcvYw6SuKClhgYuwUZf5b3rd8u2mA==}
     hasBin: true
 
   fdir@6.5.0:
@@ -2275,7 +2275,7 @@ snapshots:
 
   fast-levenshtein@2.0.6: {}
 
-  fast-xml-parser@5.3.6:
+  fast-xml-parser@5.3.7:
     dependencies:
       strnum: 2.1.2
 
