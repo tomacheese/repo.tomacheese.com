@@ -33,8 +33,8 @@ importers:
         specifier: 7.2.1
         version: 7.2.1(eslint@10.0.3)
       fast-xml-parser:
-        specifier: 5.5.3
-        version: 5.5.3
+        specifier: 5.5.4
+        version: 5.5.4
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -759,8 +759,8 @@ packages:
   fast-xml-builder@1.1.3:
     resolution: {integrity: sha512-1o60KoFw2+LWKQu3IdcfcFlGTW4dpqEWmjhYec6H82AYZU2TVBXep6tMl8Z1Y+wM+ZrzCwe3BZ9Vyd9N2rIvmg==}
 
-  fast-xml-parser@5.5.3:
-    resolution: {integrity: sha512-Ymnuefk6VzAhT3SxLzVUw+nMio/wB1NGypHkgetwtXcK1JfryaHk4DWQFGVwQ9XgzyS5iRZ7C2ZGI4AMsdMZ6A==}
+  fast-xml-parser@5.5.4:
+    resolution: {integrity: sha512-Af+qOX93cedUddGag8E54wEuVojVgPE/LS9rpRoJNcnRxImttjCoGnBzpphOym8Vu+xSbXNTtBzx7FOodYFyzQ==}
     hasBin: true
 
   fdir@6.5.0:
@@ -2358,7 +2358,7 @@ snapshots:
     dependencies:
       path-expression-matcher: 1.1.3
 
-  fast-xml-parser@5.5.3:
+  fast-xml-parser@5.5.4:
     dependencies:
       fast-xml-builder: 1.1.3
       path-expression-matcher: 1.1.3
