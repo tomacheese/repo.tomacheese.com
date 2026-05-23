@@ -1,6 +1,7 @@
 import { XMLParser } from 'fast-xml-parser'
 import fs from 'node:fs'
-import * as yargs from 'yargs'
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
 
 function getMavenMetadataFiles(dirpath: string) {
   const files: string[] = []
@@ -110,7 +111,7 @@ ${versions}
 }
 
 function main() {
-  const argv = yargs
+  const argv = yargs(hideBin(process.argv))
     .option('target', {
       description: 'Target path',
       type: 'string',
