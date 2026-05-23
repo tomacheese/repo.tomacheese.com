@@ -36,35 +36,40 @@ class MavenMetadata {
   }
 }
 
-function parseMavenMetadata(path: string): MavenMetadata {
+function parseMavenMetadata(path: string): MavenMetadata | null {
   const content = fs.readFileSync(path, 'utf8')
   const parser = new XMLParser()
   const metadata: {
     metadata: {
       groupId: string
       artifactId: string
-      versioning: {
+      version?: string
+      versioning?: {
         latest?: string
         release?: string
-        versions: {
-          version: string[]
+        versions?: {
+          version: string | string[]
         }
       }
     }
   } = parser.parse(content)
   console.log(metadata)
   const latestVersion =
-    metadata.metadata.versioning.latest ??
-    metadata.metadata.versioning.release ??
+    metadata.metadata.versioning?.latest ??
+    metadata.metadata.versioning?.release ??
+    metadata.metadata.version ??
     null
   if (latestVersion === null) {
-    throw new Error('latest version not found')
+    console.warn(`latest version not found: ${path} (skipping)`)
+    return null
   }
+  const rawVersions = metadata.metadata.versioning?.versions?.version ?? []
+  const versions = Array.isArray(rawVersions) ? rawVersions : [rawVersions]
   return new MavenMetadata(
     metadata.metadata.groupId,
     metadata.metadata.artifactId,
     latestVersion,
-    metadata.metadata.versioning.versions.version
+    versions
   )
 }
 
@@ -82,15 +87,8 @@ function generateREADME(repositories: MavenMetadata[]) {
   const contents = []
   for (const repository of repositories) {
     const dependencyXml = getDependencyXml(repository)
-    const versions = (
-      Array.isArray(repository.versions)
-        ? repository.versions
-        : [repository.versions]
-    )
-      .map((version) => {
-        console.log(version)
-        return `- \`${version}\``
-      })
+    const versions = repository.versions
+      .map((version) => `- \`${version}\``)
       .join('\n')
 
     contents.push(
@@ -125,9 +123,12 @@ function main() {
     .help()
     .parseSync()
   const mavenMetadataFiles = getMavenMetadataFiles(argv.target)
-  const metadatas = []
+  const metadatas: MavenMetadata[] = []
   for (const mavenMetadataFile of mavenMetadataFiles) {
-    metadatas.push(parseMavenMetadata(mavenMetadataFile))
+    const metadata = parseMavenMetadata(mavenMetadataFile)
+    if (metadata !== null) {
+      metadatas.push(metadata)
+    }
   }
 
   const readme = generateREADME(metadatas)
