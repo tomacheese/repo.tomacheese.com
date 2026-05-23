@@ -176,3 +176,705 @@ Tomacheese Maven Repository
 - `2.5.44`
 - `2.5.45`
 - `2.5.46`
+
+### dev.kord/kord-bom
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-bom</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-bom
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-bom</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-bom
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-bom</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-common
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-common</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-common
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-common</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-common
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-common</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-common-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-common-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-common-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-common-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-common-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-common-js</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-common-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-common-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-common-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-common-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-common-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-common-jvm</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-core
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-core
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-core
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-core-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-core-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-core-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core-js</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-core-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-core-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-core-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core-jvm</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-core-voice
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core-voice</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-core-voice
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core-voice</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-core-voice
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-core-voice</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-gateway
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-gateway</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-gateway
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-gateway</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-gateway
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-gateway</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-gateway-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-gateway-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-gateway-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-gateway-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-gateway-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-gateway-js</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-gateway-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-gateway-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-gateway-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-gateway-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-gateway-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-gateway-jvm</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-ksp-annotations
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-ksp-annotations</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-ksp-annotations
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-ksp-annotations</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-ksp-annotations
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-ksp-annotations</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-ksp-annotations-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-ksp-annotations-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-ksp-annotations-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-ksp-annotations-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-ksp-annotations-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-ksp-annotations-js</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-ksp-annotations-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-ksp-annotations-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-ksp-annotations-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-ksp-annotations-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-ksp-annotations-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-ksp-annotations-jvm</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-rest
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-rest</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-rest
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-rest</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-rest
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-rest</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-rest-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-rest-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-rest-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-rest-js</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-rest-js
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-rest-js</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-rest-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-rest-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-rest-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-rest-jvm</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-rest-jvm
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-rest-jvm</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-voice
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-voice</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+### dev.kord/kord-voice
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-voice</artifactId>
+    <version>0.15.0-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
+
+- `new-voice-encryption-modes-SNAPSHOT`
+- `0.15.0-SNAPSHOT`
+
+### dev.kord/kord-voice
+
+```xml
+<dependency>
+    <groupId>dev.kord</groupId>
+    <artifactId>kord-voice</artifactId>
+    <version>new-voice-encryption-modes-SNAPSHOT</version>
+</dependency>
+```
+
+#### Versions
