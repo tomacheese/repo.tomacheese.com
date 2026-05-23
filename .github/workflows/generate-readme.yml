@@ -53,6 +53,7 @@ jobs:
       run: pnpm start --target ../../ --output ../../README.md
 
     - name: Setup SSH for push
+      if: github.ref == 'refs/heads/master'
       env:
         PUSH_DEPLOY_KEY: ${{ secrets.PUSH_DEPLOY_KEY }}
       run: |
@@ -90,6 +91,7 @@ jobs:
         git remote set-url origin "git@github.com:${GITHUB_REPOSITORY}.git"
 
     - name: Commit & Push
+      if: github.ref == 'refs/heads/master'
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
