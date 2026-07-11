@@ -38,8 +38,11 @@ Prettier and ESLint already enforce formatting, so avoid style-only comments:
   entry, not crash).
 - **Filesystem walking**: the recursive `maven-metadata.xml` scan should not
   throw on unexpected entries; watch for unguarded `fs` calls.
-- **Workflow security**: deploy workflows push with a deploy key from
-  `secrets.PUSH_DEPLOY_KEY`. Flag any change that would print secrets, weaken
+- **Workflow security**: the `generate-readme` workflow pushes with an SSH
+  deploy key from `secrets.PUSH_DEPLOY_KEY` (pinned `known_hosts`,
+  `StrictHostKeyChecking yes`); the Maven deploy workflows
+  (`create-repo-maven.yml`, `jsa2-deploy.yml`) open PRs via `hub` using
+  `secrets.GITHUB_TOKEN`. Flag any change that would print secrets, weaken
   `StrictHostKeyChecking`, or hard-code credentials. Pinned action SHAs should
   stay pinned.
 - **`[skip ci]`** on the generate-readme auto-commit is intentional; do not
