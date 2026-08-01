@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@book000/eslint-config':
-        specifier: 1.16.20
-        version: 1.16.20(eslint@10.7.0)(typescript@7.0.2)
+        specifier: 1.16.23
+        version: 1.16.23(eslint@10.7.0)(typescript@7.0.2)
       '@types/node':
         specifier: 24.13.3
         version: 24.13.3
@@ -53,10 +53,10 @@ importers:
 
 packages:
 
-  '@book000/eslint-config@1.16.20':
-    resolution: {integrity: sha512-VUPgrvXmmHchvzZCQOyclDjTF17AuqvqQ99z9f3rf2Sm6UA0kL3OOFnRNJOagjCWo7QI0dHoIfk4edqy/Aw1Cw==}
+  '@book000/eslint-config@1.16.23':
+    resolution: {integrity: sha512-Inv9keytJJzzMH1EJZ0ogKEEUR/fpTwH+KmYo4UFWbrozgksVgqc8YCsKOkH9YLnocPm6ZMqMloJ5UW2xgY5gg==}
     peerDependencies:
-      eslint: 10.7.0
+      eslint: 10.8.0
 
   '@esbuild/aix-ppc64@0.28.1':
     resolution: {integrity: sha512-Svl7tq8k/08+p6CXPpRjQ1fKX+1odH/BQbb48fV6fj3CWHhsoIOoY87w1oHXm0qEpkIK3ZfVgp0hed3XBXzXMQ==}
@@ -1008,6 +1008,10 @@ packages:
     resolution: {integrity: sha512-Czmyns5dUsq4seFBR/Kdydhmo8y9kC79hiSkPn0YcGtNnYWnrgt0vjrSjx9tspoDGWm2CMarffRuLjM4xUz8xg==}
     engines: {node: '>=18'}
 
+  globals@17.8.0:
+    resolution: {integrity: sha512-Zz/LMDZScFmkakeL2cTHzf+PbWKdpU3uclqkZT7TjDG58j5WPt0PpA+n9uPI24fZtlw07q0OtEi84K+umsRzqQ==}
+    engines: {node: '>=18'}
+
   globalthis@1.0.4:
     resolution: {integrity: sha512-DpLKbNU4WylpxJykQujfCcwYWiV/Jhm50Goo0wrVILAv5jOr9d+H+UR3PhSCD2rCCEIg0uc+G+muBTwD54JhDQ==}
     engines: {node: '>= 0.4'}
@@ -1723,13 +1727,13 @@ packages:
 
 snapshots:
 
-  '@book000/eslint-config@1.16.20(eslint@10.7.0)(typescript@7.0.2)':
+  '@book000/eslint-config@1.16.23(eslint@10.7.0)(typescript@7.0.2)':
     dependencies:
       '@typescript-eslint/parser': 8.65.0(eslint@10.7.0)(typescript@7.0.2)
       eslint: 10.7.0
       eslint-config-prettier: 10.1.8(eslint@10.7.0)
       eslint-plugin-unicorn: 72.0.0(eslint@10.7.0)
-      globals: 17.7.0
+      globals: 17.8.0
       neostandard: 0.13.0(eslint@10.7.0)(typescript@7.0.2)
       typescript-eslint: 8.65.0(eslint@10.7.0)(typescript@7.0.2)
     transitivePeerDependencies:
@@ -2770,6 +2774,8 @@ snapshots:
   globals@15.15.0: {}
 
   globals@17.7.0: {}
+
+  globals@17.8.0: {}
 
   globalthis@1.0.4:
     dependencies:
