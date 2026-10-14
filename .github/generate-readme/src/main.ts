@@ -133,7 +133,10 @@ function main() {
 
   const readme = generateREADME(metadatas)
   const template = fs.readFileSync('template.md').toString()
-  fs.writeFileSync(argv.output, template.replace('{{REPOSITORYS}}', () => readme))
+  fs.writeFileSync(
+    argv.output,
+    template.replace('{{REPOSITORYS}}', () => readme)
+  )
 }
 
 main()
