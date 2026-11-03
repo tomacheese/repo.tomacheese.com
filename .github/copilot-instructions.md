@@ -1,52 +1,19 @@
-# Copilot instructions
+# Copilot レビュー指針
 
-Guidance for GitHub Copilot code review on this repository.
+プロジェクトの概要、コマンド、規約は [AGENTS.md](../AGENTS.md) を参照してください。レビューコメントは日本語で書いてください。
 
-## What this repository is
+## レビュー対象
 
-This repo hosts the Tomacheese Maven repository (served at
-<https://repo.tomacheese.com>). Published Maven artifacts live at the repo root
-under `com/` and `dev/`, and `README.md` is auto-generated. The only
-hand-written code is the README generator under `.github/generate-readme/`
-(TypeScript, pnpm, Node.js).
+- `.github/generate-readme/` (TypeScript) と `.github/workflows/` (GitHub Actions) の変更をレビューする。
+- 機械生成されたファイルは指摘しない。`README.md` と `com/`、`dev/` 配下 (`maven-metadata.xml`、jar、pom) が該当する。
+- Prettier と ESLint が強制するスタイル (セミコロンなし、シングルクォートなど) は指摘しない。
 
-## Scope of review
+## 重点的に見る点
 
-- Review changes under `.github/generate-readme/` (TypeScript) and
-  `.github/workflows/` (GitHub Actions).
-- Do **not** flag machine-generated files: `README.md` and anything under
-  `com/` or `dev/` (`maven-metadata.xml`, jars, poms). These are produced by the
-  deploy/generate workflows; noting their style or content is noise.
+- **ジェネレーターの正しさ** (`src/main.ts`): `fast-xml-parser` が返すバージョンノードは単一文字列にも配列にもなる。両方の形が扱われ続けていること。`versioning.latest` / `release` / `version` の null / undefined は、クラッシュさせずにエントリをスキップする設計であること。
+- **ファイルシステムの走査**: `maven-metadata.xml` の再帰走査が想定外のエントリで例外を投げないこと。保護されていない `fs` 呼び出しに注意する。
+- **ワークフローのセキュリティ**: `generate-readme` は `secrets.PUSH_DEPLOY_KEY` の SSH デプロイキーでプッシュする (`known_hosts` 固定、`StrictHostKeyChecking yes`)。Maven デプロイ系 (`create-repo-maven.yml`、`jsa2-deploy.yml`) は `secrets.GITHUB_TOKEN` で `hub` により PR を作る。シークレットの出力、`StrictHostKeyChecking` の弱体化、認証情報の直書きは指摘する。固定済みのアクション SHA は固定のままにする。
+- **パッケージマネージャー**: pnpm のみ許可 (`only-allow pnpm`)。npm / yarn のロックファイルの追加や、スクリプト・ワークフローでの `npm` / `yarn` 実行は指摘する。
+- generate-readme の自動コミットにある `[skip ci]` は意図的なものなので、削除を提案しない。
 
-## Conventions enforced by tooling (do not re-flag)
-
-Prettier and ESLint already enforce formatting, so avoid style-only comments:
-
-- No semicolons, single quotes, `printWidth` 80, `es5` trailing commas
-  (`.prettierrc.yml`).
-- ESLint via `@book000/eslint-config`; TypeScript is strict
-  (`noUnusedLocals`, `noUnusedParameters`, `noImplicitReturns`).
-- pnpm is the only allowed package manager (`only-allow pnpm`). Flag additions
-  of npm/yarn lockfiles or `npm`/`yarn` invocations in scripts or workflows.
-
-## What to focus on
-
-- **Generator correctness** (`src/main.ts`): the XML parse path from
-  `fast-xml-parser` returns a version node that may be a single string or an
-  array — verify both shapes stay handled. Check null/undefined handling of
-  `versioning.latest`/`release`/`version` (missing values are meant to skip an
-  entry, not crash).
-- **Filesystem walking**: the recursive `maven-metadata.xml` scan should not
-  throw on unexpected entries; watch for unguarded `fs` calls.
-- **Workflow security**: the `generate-readme` workflow pushes with an SSH
-  deploy key from `secrets.PUSH_DEPLOY_KEY` (pinned `known_hosts`,
-  `StrictHostKeyChecking yes`); the Maven deploy workflows
-  (`create-repo-maven.yml`, `jsa2-deploy.yml`) open PRs via `hub` using
-  `secrets.GITHUB_TOKEN`. Flag any change that would print secrets, weaken
-  `StrictHostKeyChecking`, or hard-code credentials. Pinned action SHAs should
-  stay pinned.
-- **`[skip ci]`** on the generate-readme auto-commit is intentional; do not
-  suggest removing it.
-
-Keep comments specific and actionable; skip generic praise or restating the
-diff.
+コメントは具体的で実行可能なものにし、差分の言い換えや一般的な称賛は避けてください。
