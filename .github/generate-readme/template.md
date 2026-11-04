@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/github/last-commit/tomacheese/repo.tomacheese.com)](https://github.com/tomacheese/repo.tomacheese.com)
 
-Tomacheese Maven Repository
+Tomacheese の Maven リポジトリ
 
 ## Maven: project.repository
 
